@@ -33,6 +33,15 @@
 #define WN_HSH kp NON_US_HASH
 #define WN_PPE kp PIPE2
 #define WN_TLD kp TILDE2 
+#define WN_PWD kp LC(LEFT)
+#define WN_NWD kp LC(RIGHT)
+#define WN_ZIN kp LC(PLUS)
+#define WN_ZOT kp LC(MINUS)
+#define WN_PSC kp PSCRN     
+#define WN_CUT kp LC(X)
+#define WN_CPY kp LC(C)
+#define WN_PST kp LC(V)
+#define WN_UND kp LC(Z)
 
 #define MC_PND kp HASH
 #define MC_AT  kp DQT
@@ -40,6 +49,15 @@
 #define MC_HSH kp LA(N3)
 #define MC_PPE kp PIPE
 #define MC_TLD kp TILDE 
+#define MC_PWD kp LA(LEFT)
+#define MC_NWD kp LA(RIGHT)
+#define MC_ZIN kp LG(PLUS)
+#define MC_ZOT kp LG(MINUS)
+#define MC_PSC kp LS(LG(LC(N4)))
+#define MC_CUT kp LG(X)
+#define MC_CPY kp LG(C)
+#define MC_PST kp LG(V)
+#define MC_UND kp LG(Z)
 
 
 
@@ -81,14 +99,14 @@
                 nav_layer {
                         label="Nav";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |      |     |     |     |      |
-// |      |     |     |     |     |     |   |     |      |     |     |     |      |
-// |      |     |     |     |     |     |   |     |      |     |     |     |      |
+// |      |     |     |     |     |     |   | c+B | Pwd  | Nwd | PGUP|     |      |
+// |      |     |     |     |     |     |   |  <  |  v   |  ^  |  >  |     |      |
+// |      |     |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
 //                    |     |     |     |   |     |      |     |
                         bindings = <
-   ____    ____    ____    ____    ____    ____    /**/    &kp LC(B) ____     ____   ____      ____  ____    
-   ____    ____    ____    ____    ____    ____    /**/    &kp LEFT  &kp DOWN &kp UP &kp RIGHT ____  ____   
-   ____    ____    ____    ____    ____    ____    /**/    &kp LC(F) ____     ____   ____      ____  ____    
+   ____    ____    ____    ____    &MC_ZIN &MC_ZOT /**/    &kp LC(B) &kp LA(LEFT) &kp LA(RIGHT)  &kp PG_UP  ____  ____  
+   ____    &MC_PSC &MC_CUT &MC_CPY &MC_PST &kp CAPS/**/    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  ____  ____   
+   ____    &MC_UND ____    ____    ____    ____    /**/    &kp LC(F) &kp HOME     &kp END        &kp PG_DN  ____  ____    
                            ____    ____    ____    /**/    ____      ____     ____    
                         >;
                 };
