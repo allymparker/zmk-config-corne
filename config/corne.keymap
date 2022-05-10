@@ -21,13 +21,27 @@
 #define HM_SEMI hm LCTRL SEMI
 
 #define BASE   0
-#define BUTTON 1
+#define SYM    1
 #define NAV    2
-#define MOUSE  3
+#define NUM    3
 #define MEDIA  4
-#define NUM    5
-#define SYM    6
-#define FUN    7
+#define FUN    5
+
+#define WN_PND kp HASH
+#define WN_AT  kp DQT
+#define WN_DQT kp AT
+#define WN_HSH kp NON_US_HASH
+#define WN_PPE kp PIPE2
+#define WN_TLD kp TILDE2 
+
+#define MC_PND kp HASH
+#define MC_AT  kp DQT
+#define MC_DQT kp AT
+#define MC_HSH kp LALT(N3)
+#define MC_PPE kp PIPE
+#define MC_TLD kp TILDE 
+
+
 
 / {
         keymap {
@@ -47,6 +61,20 @@
                            &lt MEDIA ESC  &lt NUM RET  &lt NAV TAB  /**/  &lt SYM BSPC  &kp SPC  &lt FUN DEL
                         >;
                 };
+                
+                symbol_layer {
+                        label="Symbol"
+
+// -----------------------------------------------------------------------------------------
+// |  `   |  @  |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
+// |      |     |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
+// |      |     |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
+//                    |     |  _  |  "  |   |     |      |     |
+                        bindings = <
+   &kp GRAVE  &MC_AT  &kp AMPS &MC_HSH  &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
+   ____       ____    &MC_PPE  &kp EXCL &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
+   ____       ____    ____     &kp DLLR &MC_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
+                               ____     &kp UNDER &MC_DQT   /**/    ____     ____    ____    
                         >;
                 };
                 
@@ -63,7 +91,7 @@
    ____    ____    ____    ____    ____    ____    /**/    ____    ____    ____    ____    ____    ____    
                            ____    ____    ____    /**/    ____    ____    ____    
                         >;
-        };
+                };
                 
 };
 
