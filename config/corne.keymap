@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define ____ &trans 
-#define FLASH &bootloader
+#define FLASH bootloader
 
 #define U_TAPPING_TERM 200
 #define HM_A hm LCTRL A
