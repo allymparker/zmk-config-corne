@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define ____ &trans 
+#define FLASH &bootloader
 
 #define U_TAPPING_TERM 200
 #define HM_A hm LCTRL A
@@ -24,8 +25,8 @@
 #define SYM    1
 #define NAV    2
 #define NUM    3
-#define MEDIA  4
-#define FUN    5
+#define FUN    4
+#define MEDIA  5
 
 #define WN_PND kp HASH
 #define WN_AT  kp DQT
@@ -59,6 +60,17 @@
 #define MC_PST kp LG(V)
 #define MC_UND kp LG(Z)
 
+#define BTCLR bt BT_CLR
+#define BT0 bt BT_SEL 0
+#define BT1 bt BT_SEL 1
+#define BT2 bt BT_SEL 2
+#define CNXT kp C_NEXT
+#define CPRV kp C_NEXT
+#define CVUP kp C_NEXT
+#define CVDN kp C_NEXT
+#define MUTE kp C_MUTE  
+#define CPP kp C_PP  
+#define STOP kp C_STOP  
 
 
 / {
@@ -138,6 +150,21 @@
    ____    ____    &kp F5  &kp F6  &kp F7  &kp F8  /**/    ____    ____    ____    ____    ____    ____    
    ____    ____    &kp F1  &kp F2  &kp F3  &kp F4  /**/    ____    ____    ____    ____    ____    ____    
                            ____    ____    ____    /**/    ____    ____    ____    
+                        >;
+                };
+                
+                media_layer {
+                        label="Media";
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |      |     |     |     |      |
+// |      |     |     |     |     |     |   |     |      |     |     |     |      |
+// |      |     |     |     |     |     |   |     |      |     |     |     |      |
+//                    |     |     |     |   |     |      |     |
+                        bindings = <
+   &FLASH ____   ____   ____   ____   ____   /**/    ____   ____  ____   ____  ____  ____    
+   ____   &CPRV  &CVDN  &CVUP  &CNXT  ____   /**/    ____   ____  ____   ____  ____  ____    
+   &BTCLR &BT0   &BT1   &BT2   ____   ____   /**/    ____   ____  ____   ____  ____    
+                        ____   ____   ____   /**/    &MUTE  &CPP  &STOP    
                         >;
                 };
                 
