@@ -8,51 +8,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "layer_names.h"
+#include "mac.h"
+#include "windows.h"
 
 #define ____ &trans 
 #define FLASH bootloader
 
 #define U_TAPPING_TERM 200
-#define HM_A hm LCTRL A
-#define HM_S hm LALT S
-#define HM_D hm LGUI D
-#define HM_F hm LSHIFT F
-#define HM_J hm LSHIFT J
-#define HM_K hm LGUI K
-#define HM_L hm LALT L
-#define HM_SEMI hm LCTRL SEMI
-
-#define WN_PND kp HASH
-#define WN_AT  kp DQT
-#define WN_DQT kp AT
-#define WN_HSH kp NON_US_HASH
-#define WN_PPE kp PIPE2
-#define WN_TLD kp TILDE2 
-#define WN_PWD kp LC(LEFT)
-#define WN_NWD kp LC(RIGHT)
-#define WN_ZIN kp LC(PLUS)
-#define WN_ZOT kp LC(MINUS)
-#define WN_PSC kp PSCRN     
-#define WN_CUT kp LC(X)
-#define WN_CPY kp LC(C)
-#define WN_PST kp LC(V)
-#define WN_UND kp LC(Z)
-
-#define MC_PND kp HASH
-#define MC_AT  kp DQT
-#define MC_DQT kp AT
-#define MC_HSH kp LA(N3)
-#define MC_PPE kp PIPE
-#define MC_TLD kp TILDE 
-#define MC_PWD kp LA(LEFT)
-#define MC_NWD kp LA(RIGHT)
-#define MC_ZIN kp LG(PLUS)
-#define MC_ZOT kp LG(MINUS)
-#define MC_PSC kp LS(LG(LC(N4)))
-#define MC_CUT kp LG(X)
-#define MC_CPY kp LG(C)
-#define MC_PST kp LG(V)
-#define MC_UND kp LG(Z)
 
 #define BTCLR bt BT_CLR
 #define BT0 bt BT_SEL 0
@@ -79,10 +41,10 @@
 // |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   ____  &kp Q  &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U    &kp I         &kp O    &kp P     ____
-   ____  &HM_A  &HM_S  &HM_D          &HM_F        &kp G        /**/  &kp H         &HM_J    &HM_K         &HM_L    &HM_SEMI  &kp SQT
-   ____  &kp Z  &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M    &kp COMMA     &kp DOT  &kp FSLH  ____
-                       &lt MEDIA ESC  &lt NUM RET  &lt NAV TAB  /**/  &lt SYM BSPC  &kp SPC  &lt FUN DEL
+   ____  &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U    &kp I         &kp O    &kp P     ____
+   ____  &MHM_A  &MHM_S &MHM_D         &MHM_F       &kp G        /**/  &kp H         &MHM_J   &MHM_K        &MHM_L   &MHM_SEMI &kp SQT
+   ____  &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M    &kp COMMA     &kp DOT  &kp FSLH  ____
+                        &lt MEDIA ESC  &lt NUM RET  &lt NAV TAB  /**/  &lt SYM BSPC  &kp SPC  &lt FUN DEL
                         >;
                 };
                 
