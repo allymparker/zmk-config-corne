@@ -14,11 +14,11 @@
 #define MC_PST kp LG(V)
 #define MC_UND kp LG(Z)
 
-#define MHM_A hm LCTRL A
-#define MHM_S hm LALT S
-#define MHM_D hm LGUI D
-#define MHM_F hm LSHIFT F
-#define MHM_J hm LSHIFT J
-#define MHM_K hm LGUI K
-#define MHM_L hm LALT L
-#define MHM_SEMI hm LCTRL SEMI
+#define MC_A hm LCTRL A
+#define MC_S hm LALT S
+#define MC_D hm LGUI D
+#define MC_F hm LSHIFT F
+#define MC_J hm LSHIFT J
+#define MC_K hm LGUI K
+#define MC_L hm LALT L
+#define MC_SEMI hm LCTRL SEMI

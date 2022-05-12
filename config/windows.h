@@ -15,11 +15,11 @@
 #define WN_PST kp LC(V)
 #define WN_UND kp LC(Z)
 
-#define WHM_A hm LCTRL A
-#define WHM_S hm LALT S
-#define WHM_D hm LGUI D
-#define WHM_F hm LSHIFT F
-#define WHM_J hm LSHIFT J
-#define WHM_K hm LGUI K
-#define WHM_L hm LALT L
-#define WHM_SEMI hm LCTRL SEMI
+#define WN_A hm LCTRL A
+#define WN_S hm LALT S
+#define WN_D hm LGUI D
+#define WN_F hm LSHIFT F
+#define WN_J hm LSHIFT J
+#define WN_K hm LGUI K
+#define WN_L hm LALT L
+#define WN_SEMI hm LCTRL SEMI

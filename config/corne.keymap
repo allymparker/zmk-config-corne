@@ -41,8 +41,8 @@
 // |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   ____  &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U    &kp I         &kp O    &kp P     ____
-   ____  &MHM_A  &MHM_S &MHM_D         &MHM_F       &kp G        /**/  &kp H         &MHM_J   &MHM_K        &MHM_L   &MHM_SEMI &kp SQT
+   ____  &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U    &kp I         &kp O    &kp P     &to WIN_BASE
+   ____  &MC_A   &MC_S  &MC_D          &MC_F        &kp G        /**/  &kp H         &MC_J    &MC_K         &MC_L    &MC_SEMI  &kp SQT
    ____  &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M    &kp COMMA     &kp DOT  &kp FSLH  ____
                         &lt MEDIA ESC  &lt NUM RET  &lt NAV TAB  /**/  &lt SYM BSPC  &kp SPC  &lt FUN DEL
                         >;
@@ -121,6 +121,52 @@
    ____   &CPRV  &CVDN  &CVUP  &CNXT  ____   /**/    ____   ____  ____   ____  ____  ____    
    &BTCLR &BT0   &BT1   &BT2   ____   ____   /**/    ____   ____  ____   ____  ____    
                         ____   ____   ____   /**/    &MUTE  &CPP  &STOP    
+                        >;
+                };
+                
+                win_base_layer {
+                        label = "WBase";
+// -----------------------------------------------------------------------------------------
+// |      |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
+// |      |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   ____  &kp Q   &kp W  &kp E          &kp R        &kp T            /**/  &kp Y            &kp U    &kp I         &kp O    &kp P     &to BASE
+   ____  &WN_A   &WN_S  &WN_D          &WN_F        &kp G            /**/  &kp H            &WN_J    &WN_K         &WN_L    &WN_SEMI  &kp SQT
+   ____  &kp Z   &kp X  &kp C          &kp V        &kp B            /**/  &kp N            &kp M    &kp COMMA     &kp DOT  &kp FSLH  ____
+                        &lt MEDIA ESC  &lt NUM RET  &lt WIN_NAV TAB  /**/  &lt WIN_SYM BSPC &kp SPC  &lt FUN DEL
+                        >;
+                };
+                
+                symbol_layer {
+                        label="WSymbol";
+
+// -----------------------------------------------------------------------------------------
+// |  `   |  @  |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
+// |      |     |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
+// |      |     |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
+//                    |  _  |  -  |  "  |   |     |      |     |
+                        bindings = <
+   &kp GRAVE  &WN_AT  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
+   ____       ____    &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
+   ____       ____    ____     &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
+                               &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____    ____    
+                        >;
+                };
+                
+                nav_layer {
+                        label="WNav";
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |Zm In|ZmOut|   | c+B | Pwd  | Nwd | PGUP|     |      |
+// |      |PrScr| CUT | COPY|PASTE|CAPS |   |  <  |  v   |  ^  |  >  |     |      |
+// |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
+//                    |     |     |     |   |     |      |     |
+                        bindings = <
+   ____    ____    ____    ____    &WN_ZIN &MC_ZOT /**/    &kp LC(B) &kp LA(LEFT) &kp LA(RIGHT)  &kp PG_UP  ____  ____  
+   ____    &WN_PSC &MC_CUT &MC_CPY &MC_PST &kp CAPS/**/    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  ____  ____   
+   ____    &WN_UND ____    ____    ____    ____    /**/    &kp LC(F) &kp HOME     &kp END        &kp PG_DN  ____  ____    
+                           ____    ____    ____    /**/    ____      ____     ____    
                         >;
                 };
                 
