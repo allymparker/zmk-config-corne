@@ -15,11 +15,11 @@
 #define WN_PST kp LC(V)
 #define WN_UND kp LC(Z)
 
-#define WN_A hm LCTRL A
+#define WN_A hm LGUI A
 #define WN_S hm LALT S
-#define WN_D hm LGUI D
+#define WN_D hm LCTRL D
 #define WN_F hm LSHIFT F
 #define WN_J hm LSHIFT J
-#define WN_K hm LGUI K
+#define WN_K hm LCTRL K
 #define WN_L hm LALT L
-#define WN_SEMI hm LCTRL SEMI
+#define WN_SEMI hm LGUI SEMI
