@@ -1,5 +1,3 @@
-
-
 #define BASE     0
 #define SYM      1
 #define NAV      2
