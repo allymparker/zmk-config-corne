@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "layer_names.h"
-#include "mac.h"
-#include "windows.h"
+#include "kp_mac.h"
+#include "kp_windows.h"
 
 #define ____ &trans 
 #define FLASH bootloader
