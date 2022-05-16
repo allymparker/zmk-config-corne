@@ -104,10 +104,10 @@
 // |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
 //                    |     |     |     |   |     |      |     |
                         bindings = <
-   ____    ____    ____    ____    &WN_ZIN &WN_ZOT /**/    &kp LC(B) &WN_PWD   &WN_NWD  &kp PG_UP  ____  ____  
-   ____    &WN_PSC &WN_CUT &WN_CPY &WN_PST &kp CAPS/**/    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  ____  ____   
-   ____    &WN_UND ____    ____    ____    ____    /**/    &kp LC(F) &kp HOME  &kp END  &kp PG_DN  ____  ____    
-                           ____    ____    ____    /**/    ____      ____      ____    
+   ____    ____    ____    ____    &WN_ZIN &WN_ZOT    /**/    &kp LC(B) &WN_PWD   &WN_NWD  &kp PG_UP  ____  ____  
+   ____    &WN_PSC &WN_CUT &WN_CPY &WN_PST &caps_word /**/    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  ____  ____   
+   ____    &WN_UND ____    ____    ____    ____       /**/    &kp LC(F) &kp HOME  &kp END  &kp PG_DN  ____  ____    
+                           ____    ____    ____       /**/    ____      ____      ____    
                         >;
                 };
                 
@@ -187,4 +187,8 @@
       bindings = <&kp>, <&kp>;
     };
   };
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
 };
