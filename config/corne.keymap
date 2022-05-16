@@ -103,7 +103,7 @@
 // |      |     |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   &kp GRAVE  &WN_AT  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
+   &kp GRAVE  &WN_AT  &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
    ____       ____    &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
    ____       ____    ____     &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
                                &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____    ____    
@@ -118,8 +118,8 @@
 // |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
 //                    |     |     |     |   |     |      |     |
                         bindings = <
-   ____    ____    ____    ____    &WN_ZIN &MC_ZOT /**/    &kp LC(B) &kp LA(LEFT) &kp LA(RIGHT)  &kp PG_UP  ____  ____  
-   ____    &WN_PSC &MC_CUT &MC_CPY &MC_PST &kp CAPS/**/    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  ____  ____   
+   ____    ____    ____    ____    &WN_ZIN &WN_ZOT /**/    &kp LC(B) &kp LA(LEFT) &kp LA(RIGHT)  &kp PG_UP  ____  ____  
+   ____    &WN_PSC &WN_CUT &WN_CPY &WN_PST &kp CAPS/**/    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  ____  ____   
    ____    &WN_UND ____    ____    ____    ____    /**/    &kp LC(F) &kp HOME     &kp END        &kp PG_DN  ____  ____    
                            ____    ____    ____    /**/    ____      ____     ____    
                         >;
