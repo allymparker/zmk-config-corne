@@ -11,7 +11,7 @@
 #define MC_PSC kp LS(LG(LC(N4)))
 #define MC_CUT kp LG(X)
 #define MC_CPY kp LG(C)
-#define MC_PST kp LG(V)
+#define MC_PST hm LSHIFT LG(V)
 #define MC_UND kp LG(Z)
 
 #define MC_A hm LCTRL A

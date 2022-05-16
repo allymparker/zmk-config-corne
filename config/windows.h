@@ -1,4 +1,3 @@
-
 #define WN_PND kp HASH
 #define WN_AT  kp DQT
 #define WN_DQT kp AT
@@ -12,7 +11,7 @@
 #define WN_PSC kp PSCRN     
 #define WN_CUT kp LC(X)
 #define WN_CPY kp LC(C)
-#define WN_PST kp LC(V)
+#define WN_PST hm LSHIFT LC(V)
 #define WN_UND kp LC(Z)
 
 #define WN_A hm LGUI A
