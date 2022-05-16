@@ -38,15 +38,15 @@
                         label="Symbol";
 
 // -----------------------------------------------------------------------------------------
-// |  `   |  @  |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
-// |      |     |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
-// |      |     |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
+// |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
+// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
+// |      |BSLH |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   &kp GRAVE  &MC_AT  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
-   ____       ____    &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
-   ____       ____    ____     &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
-                               &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____    ____    
+   ____  &kp CARET  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
+   ____  &kp GRAVE  &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
+   ____  &kp BSLH   ____     &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
+                             &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____    ____    
                         >;
                 };
                 
@@ -84,15 +84,15 @@
                         label="WSymbol";
 
 // -----------------------------------------------------------------------------------------
-// |  `   |  @  |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
-// |      |     |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
-// |      |     |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
+// |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
+// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |     |      |
+// |      |BSLH |     |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   &kp GRAVE  &WN_AT  &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
-   ____       ____    &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
-   ____       ____    ____     &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
-                               &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____    ____    
+   ____  &kp CARET  &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
+   ____  &kp GRAVE  &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    ____    ____    
+   ____  &kp BSLH   ____     &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
+                             &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____    ____    
                         >;
                 };
                 
