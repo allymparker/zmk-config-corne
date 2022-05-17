@@ -199,6 +199,7 @@
 / {
     macros {
         bool_and: bool_and {
+            wait-ms = <0>;
             label = "ZM_bool_and";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -209,6 +210,7 @@
         };
 
         bool_or_WN: bool_or_WN {
+            wait-ms = <0>;
             label = "ZM_bool_or";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -219,6 +221,7 @@
         };
 
         bool_or_MC: bool_or_MC {
+            wait-ms = <0>;
             label = "ZM_bool_or";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -229,6 +232,7 @@
         };
         
         arrow: arrow {
+            wait-ms = <0>;
             label = "ZM_arrow";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
