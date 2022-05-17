@@ -39,14 +39,14 @@
 
 // -----------------------------------------------------------------------------------------
 // |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
-// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |  '  |      |
+// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |  &&  | ||  | =>  |  '  |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   ____  &kp CARET  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
-   ____  &kp GRAVE  &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    &kp SQT ____    
-   ____  &kp BSLH   &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
-                             &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____    ____    
+   ____  &kp CARET  &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____      ____         ____    ____    ____    
+   ____  &kp GRAVE  &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_MC  &arrow  &kp SQT ____    
+   ____  &kp BSLH   &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT ____      ____         ____    ____    ____    
+                             &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____    
                         >;
                 };
                 
@@ -85,14 +85,14 @@
 
 // -----------------------------------------------------------------------------------------
 // |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |      |     |     |     |      |
-// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |      |     |     |  '  |      |
+// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |  &&  | ||  | =>  |  '  |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   ____  &kp CARET  &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____    ____    ____    ____    ____    
-   ____  &kp GRAVE  &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC ____    ____    ____    &kp SQT ____    
-   ____  &kp BSLH   &WN_AT   &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____    ____    ____    ____    ____    
-                             &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____    ____    
+   ____  &kp CARET  &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____      ____         ____    ____    ____    
+   ____  &kp GRAVE  &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_WN  &arrow  &kp SQT ____    
+   ____  &kp BSLH   &WN_AT   &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____      ____         ____    ____    ____    
+                             &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____      ____    
                         >;
                 };
                 
@@ -198,14 +198,43 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        bool_and: bool_and {
+            label = "ZM_bool_and";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
+                = 
+                 <&kp AMPS &kp AMPS>
+                ;
+        };
+
+        bool_or_WN: bool_or_WN {
+            label = "ZM_bool_or";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = 
+                 <&WN_PPE &WN_PPE>
+                ;
+        };
+
+        bool_or_MC: bool_or_MC {
+            label = "ZM_bool_or";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = 
+                 <&MC_PPE &MC_PPE>
+                ;
+        };
+        
+        arrow: arrow {
+            label = "ZM_arrow";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = 
+                 <&kp EQUAL &kp GT>
                 ;
         };
     };
