@@ -191,7 +191,7 @@
       compatible = "zmk,behavior-caps-word";
       label = "CAPS_WORD";
       #binding-cells = <0>;
-      continue-list = <UNDERSCORE MINUS>;
+      continue-list = <UNDERSCORE MINUS BSPC>;
     };
   };
 };
@@ -216,7 +216,8 @@
             #binding-cells = <0>;
             bindings
                 = 
-                 <&WN_PPE &WN_PPE>
+                 <&kp PIPE>,
+                 <&kp PIPE>
                 ;
         };
 
