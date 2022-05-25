@@ -211,7 +211,7 @@
 
         bool_or_WN: bool_or_WN {
             wait-ms = <0>;
-            label = "ZM_bool_or";
+            label = "ZM_bool_or_wn";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -222,7 +222,7 @@
 
         bool_or_MC: bool_or_MC {
             wait-ms = <0>;
-            label = "ZM_bool_or";
+            label = "ZM_bool_or_mc";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
