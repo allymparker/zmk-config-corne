@@ -43,7 +43,7 @@
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   ____  &kp CARET        &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR ____      ____         ____    ____    ____    
+   ____  &kp CARET        &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &kp M     ____         ____    ____    ____    
    ____  &kp GRAVE        &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_MC  &arrow  &kp SQT ____    
    ____  &kp NON_US_BSLH  &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT ____      ____         ____    ____    ____    
                                    &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____    
@@ -89,7 +89,7 @@
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   ____  &kp CARET        &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR ____      ____         ____    ____    ____    
+   ____  &kp CARET        &kp AMPS &WN_HSH   &WN_TLD   &kp LPAR  /**/    &kp RPAR &kp W     ____         ____    ____    ____    
    ____  &kp GRAVE        &WN_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_WN  &arrow  &kp SQT ____    
    ____  &kp NON_US_BSLH  &WN_AT   &kp DLLR  &WN_PND   &kp LBKT  /**/    &kp RBKT ____      ____         ____    ____    ____    
                                    &kp UNDER &kp MINUS &WN_DQT   /**/    ____     ____      ____    
