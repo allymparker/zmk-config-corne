@@ -216,12 +216,7 @@
             #binding-cells = <0>;
             bindings
                 = 
-                 <&kp PIPE>,
-                 <&kp PIPE2>,
-                 <&WN_PPE>,
-                 <&kp LS(NON_US_BSLH)>,
-                 <&kp TILDE>,
-                 <&kp TILDE2>
+                 <&kp PIPE &kp PIPE2 &WN_PPE &kp LS(NON_US_BSLH) &kp TILDE &kp TILDE2>
                 ;
         };
 
