@@ -23,6 +23,6 @@
 #define WN_L hm LALT L
 #define WN_SEMI hm LGUI SEMI
 
-#define WN_WNL kp LG(LEFT)
-#define WN_WNU kp LG(UP)
-#define WN_WNR kp LG(RIGHT)
+#define WN_WNL hm LALT LG(LEFT)
+#define WN_WNU hm LCTRL LG(UP)
+#define WN_WNR hm LSHIFT LG(RIGHT)
