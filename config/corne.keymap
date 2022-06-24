@@ -56,12 +56,12 @@
 // |      |     |     |     |Zm In|ZmOut|   | c+B | Pwd  | Nwd | PGUP|     |      |
 // |      |PrScr| CUT | COPY|PASTE|CAPS |   |  <  |  v   |  ^  |  >  |     |      |
 // |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
-//                    |     |     |     |   |     |      |     |
+//                    |     |     |     |   |     | Spot |     |
                         bindings = <
-   ____    ____    ____    ____    &MC_ZIN &MC_ZOT /**/    &kp LC(B)     &MC_PWD   &MC_NWD  &kp PG_UP  ____  ____  
-   ____    &MC_PSC &MC_CUT &MC_CPY &MC_PST &kp CAPS/**/    &kp LEFT      &kp DOWN  &kp UP   &kp RIGHT  ____  ____   
-   ____    &MC_UND ____    ____    ____    ____    /**/    &kp LC(F)     &kp HOME  &kp END  &kp PG_DN  ____  ____    
-                           ____    ____    ____    /**/    &kp LA(BSPC)  ____      ____    
+   ____    ____    ____    ____    &MC_ZIN &MC_ZOT /**/    &kp LC(B)     &MC_PWD     &MC_NWD  &kp PG_UP  ____  ____  
+   ____    &MC_PSC &MC_CUT &MC_CPY &MC_PST &kp CAPS/**/    &kp LEFT      &kp DOWN    &kp UP   &kp RIGHT  ____  ____   
+   ____    &MC_UND ____    ____    ____    ____    /**/    &kp LC(F)     &kp HOME    &kp END  &kp PG_DN  ____  ____    
+                           ____    ____    ____    /**/    &kp LA(BSPC)  &kp LG(SPC) ____    
                         >;
                 };
                 
@@ -102,12 +102,12 @@
 // |      |     |     |     |Zm In|ZmOut|   | c+B | Pwd  | Nwd | PGUP|     |      |
 // |      |PrScr| CUT | COPY|PASTE|CAPS |   |  <  |  v   |  ^  |  >  |     |      |
 // |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
-//                    |     |     |     |   |     |      |     |
+//                    |     |     |     |   |     | PTrun|     |
                         bindings = <
-   ____    ____    ____    ____    &WN_ZIN &WN_ZOT    /**/    &kp LC(B)    &WN_PWD   &WN_NWD  &kp PG_UP  ____  ____  
-   ____    &WN_PSC &WN_CUT &WN_CPY &WN_PST &caps_word /**/    &kp LEFT     &kp DOWN  &kp UP   &kp RIGHT  ____  ____   
-   ____    &WN_UND ____    ____    ____    ____       /**/    &kp LC(F)    &kp HOME  &kp END  &kp PG_DN  ____  ____    
-                           ____    ____    ____       /**/    &kp LC(BSPC) ____      ____    
+   ____    ____    ____    ____    &WN_ZIN &WN_ZOT    /**/    &kp LC(B)    &WN_PWD     &WN_NWD  &kp PG_UP  ____  ____  
+   ____    &WN_PSC &WN_CUT &WN_CPY &WN_PST &caps_word /**/    &kp LEFT     &kp DOWN    &kp UP   &kp RIGHT  ____  ____   
+   ____    &WN_UND ____    ____    ____    ____       /**/    &kp LC(F)    &kp HOME    &kp END  &kp PG_DN  ____  ____    
+                           ____    ____    ____       /**/    &kp LC(BSPC) &kp LA(SPC) ____    
                         >;
                 };
                 
