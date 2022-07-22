@@ -43,10 +43,10 @@
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |      |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |      |     |
                         bindings = <
-   ____  &kp CARET        &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &smiley   &sad         &wink_mc         ____    ____    
-   ____  &kp GRAVE        &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_MC  &arrow   &kp SQT ____    
-   ____  &kp NON_US_BSLH  &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT &kp M     ____         ____     ____    ____    
-                                   &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____    
+   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &smiley   &sad         &wink_mc         ____    ____    
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &bool_and &bool_or_MC  &arrow   &kp SQT ____    
+   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT &kp M     ____         ____     ____    ____    
+                              &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____    
                         >;
                 };
                 
