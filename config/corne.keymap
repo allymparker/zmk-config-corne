@@ -67,15 +67,15 @@
                 num_layer {
                         label="Num";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |  *  |  7   |  8  |  9  |     |      |
-// |      |     | WIN<| WIN^| WIN>|     |   |  +  |  4   |  5  |  6  |  /  |      |
+// |      |     |     | DR  | DL  |     |   |  *  |  7   |  8  |  9  |     |      |
+// |      |     |     |     |     |     |   |  +  |  4   |  5  |  6  |  /  |      |
 // |      |     |     |     |     |     |   |  -  |  1   |  2  |  3  |  %  |      |
 //                    |     |     |     |   |  =  |  0   |  .  |
                         bindings = <
-   ____    ____      ____     ____     ____      ____    /**/    &kp STAR  &kp N7  &kp N8  &kp N9  ____      ____
-   ____    &kp LCTRL &kp LALT &kp LGUI &kp LSHFT ____    /**/    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp FSLH  ____
-   ____    ____      ____     ____     ____      ____    /**/    &kp MINUS &kp N1  &kp N2  &kp N3  &kp PRCNT ____
-                              ____     ____      ____    /**/    &kp EQUAL &kp N0  &kp DOT
+   ____    ____      ____      &kp LC(LEFT) &kp LC(RIGHT) ____    /**/    &kp STAR  &kp N7  &kp N8  &kp N9  ____      ____
+   ____    &kp LCTRL &kp LALT  &kp LGUI     &kp LSHFT     ____    /**/    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp FSLH  ____
+   ____    ____      ____      ____         ____          ____    /**/    &kp MINUS &kp N1  &kp N2  &kp N3  &kp PRCNT ____
+                               ____         ____          ____    /**/    &kp EQUAL &kp N0  &kp DOT
                         >;
                 };
 
