@@ -13,6 +13,8 @@
 #define MC_CPY kp LG(C)
 #define MC_PST hm LSHIFT LG(V)
 #define MC_UND kp LG(Z)
+#define MC_HME kp LG(LEFT)
+#define MC_END kp LG(RIGHT)
 
 #define MC_A hm LCTRL A
 #define MC_S hm LALT S
