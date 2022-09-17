@@ -42,8 +42,8 @@
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
-   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &smiley  &sad      &wink    ____    ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &kp SQT  &bool_and &bool_or  &arrow   ____
+   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &smiley  &sad      &wink     ____    ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &kp SQT  &bool_and &bool_or  &arrow  ____
    ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT &kp M     ____      ____     ____    ____
                               &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____
                         >;
