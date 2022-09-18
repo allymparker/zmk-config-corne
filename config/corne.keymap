@@ -26,10 +26,10 @@
 // |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | TAB | RET | ESC |   | BSP | SPC  | DEL |
                         bindings = <
-   ____  &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U        &kp I      &kp O    &kp P     ____
-   ____  &MC_A   &MC_S  &MC_D          &MC_F        &kp G        /**/  &kp H         &MC_J        &MC_K      &MC_L    &MC_SEMI  ____
-   ____  &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M        &kp COMMA  &kp DOT  &kp FSLH  ____
-                        &lt MEDIA TAB  &lt NUM RET  &lt NAV ESC  /**/  &lt FUN BSPC  &lt SYM SPC  &kp DEL
+   &CPP   &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U        &kp I      &kp O    &kp P     ____
+   &EMOJI &MC_A   &MC_S  &MC_D          &MC_F        &kp G        /**/  &kp H         &MC_J        &MC_K      &MC_L    &MC_SEMI  ____
+   ____   &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M        &kp COMMA  &kp DOT  &kp FSLH  ____
+                         &lt MEDIA TAB  &lt NUM RET  &lt NAV ESC  /**/  &lt FUN BSPC  &lt SYM SPC  &kp DEL
                         >;
                 };
 
@@ -42,9 +42,9 @@
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
-   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &kp LPAR  /**/    &kp RPAR &smiley  &sad      &wink     ____    ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &kp LBRC  /**/    &kp RBRC &kp SQT  &bool_and &bool_or  &arrow  ____
-   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &kp LBKT  /**/    &kp RBKT &kp M     ____      ____     ____    ____
+   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &kp RPAR &smiley  &sad      &wink     ____    ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &TD_Brc   /**/    &kp RBRC &kp SQT  &bool_and &bool_or  &arrow  ____
+   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &kp RBKT &kp M     ____      ____     ____    ____
                               &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____      ____
                         >;
                 };
@@ -146,6 +146,31 @@
       #binding-cells = <0>;
       continue-list = <UNDERSCORE MINUS BSPC>;
     };
+
+    TD_Par: td_paren {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_PAREN";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LPAR>, <&kp RPAR>;
+    };
+
+    TD_Brc: td_brace {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_BRACE";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LBRC>, <&kp RBRC>;
+    };
+
+    TD_Bkt: td_bracket {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_BRACKET";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LBKT>, <&kp RBKT>;
+    };
+
   };
 };
 
