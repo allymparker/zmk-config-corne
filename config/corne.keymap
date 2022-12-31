@@ -26,9 +26,9 @@
 // |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | TAB | RET | ESC |   | BSP | SPC  | DEL |
                         bindings = <
-   &CPP   &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U        &kp I      &kp O    &kp P     ____
-   &EMOJI &MC_A   &MC_S  &MC_D          &MC_F        &kp G        /**/  &kp H         &MC_J        &MC_K      &MC_L    &MC_SEMI  ____
-   ____   &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M        &kp COMMA  &kp DOT  &kp FSLH  ____
+   &CPP   &kp Q   &kp W  &kp E          &kp R        &kp T        /**/  &kp Y         &kp U        &kp I      &kp O    &kp P     &MC_ZIN
+   &EMOJI &MC_A   &MC_S  &MC_D          &MC_F        &kp G        /**/  &kp H         &MC_J        &MC_K      &MC_L    &MC_SEMI  &MC_PSC
+   ____   &kp Z   &kp X  &kp C          &kp V        &kp B        /**/  &kp N         &kp M        &kp COMMA  &kp DOT  &kp FSLH  &MC_ZOT
                          &lt MEDIA TAB  &lt NUM RET  &lt NAV ESC  /**/  &lt FUN BSPC  &lt SYM SPC  &kp DEL
                         >;
                 };
@@ -52,14 +52,14 @@
                 nav_layer {
                         label="Nav";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |Zm In|ZmOut|   | c+B | Pwd  | Nwd | PGUP|     |      |
-// |      |PrScr| CUT | COPY|PASTE|CAPS |   |  <  |  v   |  ^  |  >  |     |      |
-// |      |Undo |     |     |     |     |   | c+F | Home | End | PgDN|     |      |
+// |      |     |     |     |     |     |   |     | Pwd  | Nwd | PGUP|     |      |
+// |      |UNDO | CUT | COPY|PASTE|CAPS |   |  <  |  v   |  ^  |  >  |     |      |
+// |      |     |     |     |     |     |   |     | Home | End | PgDN|     |      |
 //                    |     |     |     |   |     | Spot |     |
                         bindings = <
-   ____    ____    ____    ____    &MC_ZIN &MC_ZOT    /**/    &kp LC(B)     &MC_PWD     &MC_NWD  &kp PG_UP  ____  ____
-   ____    &MC_PSC &MC_CUT &MC_CPY &MC_PST &caps_word /**/    &kp LEFT      &kp DOWN    &kp UP   &kp RIGHT  ____  ____
-   ____    &MC_UND ____    ____    ____    ____       /**/    &kp LC(F)     &MC_HME     &MC_END  &kp PG_DN  ____  ____
+   ____    ____    ____    ____    ____    ____       /**/    ____          &MC_PWD     &MC_NWD  &kp PG_UP  ____  ____
+   ____    &MC_UND &MC_CUT &MC_CPY &MC_PST &caps_word /**/    &kp LEFT      &kp DOWN    &kp UP   &kp RIGHT  ____  ____
+   ____    ____    ____    ____    ____    ____       /**/    ____          &MC_HME     &MC_END  &kp PG_DN  ____  ____
                            ____    ____    ____       /**/    &kp LA(BSPC)  &kp LG(SPC) ____
                         >;
                 };
