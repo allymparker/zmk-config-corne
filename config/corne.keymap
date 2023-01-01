@@ -115,14 +115,14 @@
                 wm_layer {
                         label="WM";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |WarpP|WarpN|     |     |     |      |
+// |      |     |     |     |Centr|     |   |WarpP|WarpN|     |     |     |      |
 // |      |     |RSizL|RSizD|RSizU|RSizR|   |FlipX|FlipY|FulSc|     |     |      |
-// |      |     |     |     |     |     |   |SP L |SP R |     |     |     |      |
+// |      |     |     |     |Float|     |   |SP L |SP R |     |     |     |      |
 //                    |     |     | TOG |   |Foc P|Foc N|     |
                         bindings = <
-   ____    ____    ____        ____        ____      ____        /**/    &HYP(P)       &HYP(N)        ____       ____    ___    ____
+   ____    ____    ____        ____        &MEH(C)   ____        /**/    &HYP(P)       &HYP(N)        ____       ____    ___    ____
    ____    ____    &MEH(LEFT)  &MEH(DOWN)  &MEH(UP)  &MEH(RIGHT) /**/    &HYP(X)       &HYP(Y)        &kp LA(F)  ____    ___    ____
-   ____    ____    ____        ____        ____      ____        /**/    &kp LC(LEFT)  &kp LC(RIGHT)  ____       ____    ___    ____
+   ____    ____    ____        ____        &MEH(F)   ____        /**/    &kp LC(LEFT)  &kp LC(RIGHT)  ____       ____    ___    ____
                                ____        ____      &tog WM     /**/    &MEH(P)       &MEH(N)        ____
                         >;
                 };
