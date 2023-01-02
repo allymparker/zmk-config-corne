@@ -14,8 +14,6 @@
 #define ____ &trans
 #define FLASH bootloader
 
-#define MEH(key) kp LS(LC(LA(key)))
-#define HYP(key) kp LS(LC(LA(LG(key))))
 
 / {
         keymap {
@@ -120,10 +118,10 @@
 // |      |     |     |     |Float|     |   |SP L |SP R |     |     |     |      |
 //                    |     |     | TOG |   |Foc P|Foc N|     |
                         bindings = <
-   ____    ____    ____        ____        &MEH(C)   ____        /**/    &HYP(P)       &HYP(N)        ____       ____    ____   ____
-   ____    ____    &MEH(LEFT)  &MEH(DOWN)  &MEH(UP)  &MEH(RIGHT) /**/    &HYP(X)       &HYP(Y)        &kp LA(F)  ____    ____   ____
-   ____    ____    ____        ____        &MEH(F)   ____        /**/    &kp LC(LEFT)  &kp LC(RIGHT)  ____       ____    ____   ____
-                               ____        ____      &tog WM     /**/    &MEH(P)       &MEH(N)        ____
+   ____    ____    ____   ____    &YB_CC  ____     /**/  &YB_WP        &YB_WN        ____    ____    ____   ____
+   ____    ____    &YB_RL &YB_RD  &YB_RU  &YB_RR   /**/  &YB_MX        &YB_MY        &YB_FS  ____    ____   ____
+   ____    ____    ____   ____    &YB_CF  ____     /**/  &kp LC(LEFT)  &kp LC(RIGHT) ____    ____    ____   ____
+                          ____    ____    &tog WM  /**/  &YB_FP        &YB_FN        ____
                         >;
                 };
 
