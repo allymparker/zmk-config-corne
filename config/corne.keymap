@@ -41,12 +41,12 @@
 
 // -----------------------------------------------------------------------------------------
 // |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |     |     |     |     |      |
-// |      |  `  |  |  |  !  |  ?  |  {  |   |  }  |  '  |     |     |     |      |
+// |      |  `  |  |  |  !  | '\? |  {  |   |  }  |     |     |     |     |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
    ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &kp RPAR ____     ____   ____   ____   ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &kp QMARK &TD_Brc   /**/    &kp RBRC &kp SQT  ____   ____   ____   ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &TD_QTQM  &TD_Brc   /**/    &kp RBRC ____     ____   ____   ____   ____
    ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &kp RBKT ____     ____   ____   ____   ____
                               &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____     ____
                         >;
@@ -187,6 +187,14 @@
         #binding-cells = <0>;
         tapping-term-ms = <200>;
         bindings = <&kp LBKT>, <&kp RBKT>;
+    };
+
+    TD_QTQM: td_qtqm {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_QTQM";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp SQT>, <&kp QMARK>;
     };
 
   };
