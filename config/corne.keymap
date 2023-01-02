@@ -39,14 +39,14 @@
 
 // -----------------------------------------------------------------------------------------
 // |      | HAT |  &  |  #  |  ~  |  (  |   |  )  |     |     |     |     |      |
-// |      |  `  |  |  |  !  | '\? |  {  |   |  }  |     |     |     |     |      |
+// |      |  `  |  |  |  !  | '\? |  {  |   |  }  | wfl | wfd | wfu | wfr |      |
 // |      |BSLH |  @  |  $  |  £  |  [  |   |  ]  |     |     |     |     |      |
 //                    |  _  |  -  |  "  |   |     |     |     |
                         bindings = <
-   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &kp RPAR ____     ____   ____   ____   ____
-   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &TD_QTQM  &TD_Brc   /**/    &kp RBRC ____     ____   ____   ____   ____
-   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &kp RBKT ____     ____   ____   ____   ____
-                              &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____     ____
+   ____  &kp CARET   &kp AMPS &MC_HSH   &MC_TLD   &TD_Par   /**/    &kp RPAR ____    ____   ____   ____   ____
+   ____  &kp GRAVE   &MC_PPE  &kp EXCL  &TD_QTQM  &TD_Brc   /**/    &kp RBRC &YB_FL  &YB_FD &YB_FU &YB_FR ____
+   ____  &kp BSLH    &MC_AT   &kp DLLR  &MC_PND   &TD_Bkt   /**/    &kp RBKT ____    ____   ____   ____   ____
+                              &kp UNDER &kp MINUS &MC_DQT   /**/    ____     ____    ____
                         >;
                 };
 
